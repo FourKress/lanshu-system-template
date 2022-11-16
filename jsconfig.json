@@ -1,0 +1,13 @@
+{
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "target": "es6",
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "@common/*": ["node_modules/@lanshu/system-common/*"]
+    }
+  }
+}
