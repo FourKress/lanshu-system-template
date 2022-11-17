@@ -1,4 +1,4 @@
-import systemManage, { systemGroupRoute } from './system-manage';
+import settingsManage, { settingsGroupRoute } from './settings-manage';
 
 const login = () => import('@/views/login');
 const dashboard = () => import('@/views/dashboard');
@@ -8,7 +8,7 @@ const errorNotFound = () =>
 const errorNoAuth = () => import('@lanshu/system-common/components/error/401');
 
 const baseRoutes = [
-  ...systemManage,
+  ...settingsManage,
   {
     path: '/login',
     name: 'login',
@@ -43,6 +43,6 @@ const baseRoutes = [
 
 const routes = [...baseRoutes];
 
-export const groupRoute = [systemGroupRoute];
+export const groupRoute = [settingsGroupRoute];
 
 export default routes;

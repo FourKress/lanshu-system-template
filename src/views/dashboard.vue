@@ -1,6 +1,6 @@
 <template>
   <v-page-view :show-crumb="false" plain>
-    这是后台管理系统
+    <p>这是后台管理系统</p>
   </v-page-view>
 </template>
 

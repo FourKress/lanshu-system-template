@@ -15,7 +15,7 @@
   "extends": ["airbnb-base", "plugin:vue/essential", "prettier"],
   "globals": {
     "CONFIG": "readonly",
-    "WD_CONFIG": "readonly",
+    "LANSHU_CONFIG": "readonly",
     "ELEMENT": "readonly",
     "vue": "readonly",
     "vue-router": "readonly"

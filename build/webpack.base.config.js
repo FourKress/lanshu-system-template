@@ -19,12 +19,12 @@ function resolve(relatedPath) {
 
 const configFileMap = {
   test: resolve(
-    '../node_modules/@lanshu/system-common/config/wd.config.test.js',
+    '../node_modules/@lanshu/system-common/config/lanshu.config.test.js',
   ),
   production: resolve(
-    '../node_modules/@lanshu/system-common/config/wd.config.build.js',
+    '../node_modules/@lanshu/system-common/config/lanshu.config.build.js',
   ),
-  dev: resolve('../node_modules/@lanshu/system-common/config/wd.config.js'),
+  dev: resolve('../node_modules/@lanshu/system-common/config/lanshu.config.js'),
 };
 const configFile = configFileMap[runtime] || configFileMap.dev;
 const iconfontFile = resolve(
@@ -52,7 +52,7 @@ const plugins = [
     CONFIG: JSON.stringify(config),
   }),
   new CopyPlugin([
-    { from: configFile, to: 'js/wd.config.js' },
+    { from: configFile, to: 'js/lanshu.config.js' },
     { from: iconfontFile, to: 'js/iconfont.js' },
   ]),
 ];

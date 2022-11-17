@@ -1002,10 +1002,10 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@lanshu/system-common@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.npmmirror.com/@lanshu/system-common/-/system-common-0.0.3.tgz#b21e6178fea4f328ae6950d7b8d7ecff1f956027"
-  integrity sha512-9OZMZRrzvDut1fn1zFq/frmNWXzft9R38nPbDw2zBGgfjC2aD0nR6yxtokUB38YVFuCIK9Ta00VZ6hH6JW6zbw==
+"@lanshu/system-common@0.0.5":
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/@lanshu/system-common/-/system-common-0.0.5.tgz#2e68b333df9fbbaa47b6ca547c6fdf6d58cd03be"
+  integrity sha512-aaSvyC46dtbIkt70y+hTHZmssSL+fLaFpHKjegtIY+dHuLIe1DFpxY4TUZWL09S1puVIO5HjXv/5td2CINewZA==
   dependencies:
     accounting "^0.4.1"
     axios "^0.20.0"

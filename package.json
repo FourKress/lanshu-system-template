@@ -27,7 +27,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@lanshu/system-common": "^0.0.3",
+    "@lanshu/system-common": "^0.0.5",
     "accounting": "^0.4.1",
     "axios": "^0.18.0",
     "btoa": "^1.2.1",

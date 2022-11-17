@@ -23,10 +23,6 @@ Vue.use(Prototype);
 // 注册全局组件, 放在后面
 Vue.use(Components);
 
-if (WD_CONFIG.devtools) {
-  Vue.config.devtools = true;
-}
-
 new Vue({
   el: '#app',
   store,

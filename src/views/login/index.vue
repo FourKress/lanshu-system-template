@@ -99,6 +99,10 @@ export default {
     },
   },
   mounted() {
+    // TODO 模拟登录
+    this.$store.commit('user/updateUserInfo', {
+      resources: [],
+    });
   },
   methods: {
     handleLogin() {

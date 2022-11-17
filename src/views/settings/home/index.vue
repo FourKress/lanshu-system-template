@@ -1,12 +1,13 @@
 <template>
-  <v-page-view title="设置中心">
-    欢迎您进入设置中心！
+  <v-page-view title="设置中心" showRight>
+    <p>欢迎您进入设置中心！</p>
   </v-page-view>
 </template>
 
 <script>
 
 export default {
+  name: 'SettingsHome',
   data() {
     return {
     };
