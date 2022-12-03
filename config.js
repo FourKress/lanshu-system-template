@@ -4,5 +4,4 @@ module.exports = {
   ...config,
   title: '后台管理系统',
   port: 5000,
-  module: 'ht',
 };

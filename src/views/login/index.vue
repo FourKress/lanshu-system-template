@@ -13,13 +13,12 @@
         autocomplete="on"
         label-position="left"
       >
-
-        <el-form-item prop="loginId">
+        <el-form-item prop="username">
           <el-input
-            ref="loginId"
-            v-model="loginForm.loginId"
+            ref="username"
+            v-model="loginForm.username"
             placeholder="请输入用户名称"
-            name="loginId"
+            name="username"
             type="text"
             autocomplete="off"
             clearable
@@ -49,13 +48,13 @@
       </el-form>
     </div>
 
-
-
     <!-- 修改密码 -->
     <VEditPassword :visible.sync="editPassDialogVisible" @sure="editPassSure" />
 
     <p class="icp">
-      <a href="https://beian.miit.gov.cn/#/Integrated/index">渝ICP备XXXXXXXXXXX</a>
+      <a href="https://beian.miit.gov.cn/#/Integrated/index">
+        渝ICP备XXXXXXXXXXX
+      </a>
     </p>
   </div>
 </template>
@@ -77,11 +76,11 @@ export default {
 
     return {
       loginForm: {
-        loginId: '',
+        username: '',
         password: '',
       },
       loginRules: {
-        loginId: [
+        username: [
           { required: true, trigger: 'change', message: '请输入用户名称！' },
         ],
         password: [
@@ -111,12 +110,13 @@ export default {
           return false;
         }
         this.loading = true;
-        const { loginId, password } = this.loginForm;
+        const { username, password } = this.loginForm;
         const pwd = MD5(password).toUpperCase().substr(0, 32);
         this.$https
-          .post('/login/in', {
-            loginId,
-            pwd,
+          .post('/auth/login', {
+            username,
+            password: pwd,
+            origin: 0,
           })
           .then(({ data }) => {
             if (data.firstTime === 1) {

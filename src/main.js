@@ -2,6 +2,7 @@ import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import Vue from 'vue';
 import ElementUI from 'element-ui';
+import https from '@lanshu/system-common/utils/https';
 import App from './App';
 import router from './router';
 import store from './store';
@@ -12,6 +13,8 @@ import Components from './components';
 
 // 引入项目中的所有样式
 import '@/assets/styles/index.less';
+
+https.defaults.baseURL = 'http://222.179.101.46:8006/';
 
 Vue.use(ElementUI);
 // 注册全局过滤器
